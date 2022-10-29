@@ -3,18 +3,19 @@
 @import "veribles";
 @import "mixsins";
 @import "header";
+@import "hero_section";
 
 
-@media screen and (max-width:768px) {
+@media (min-width:769px) and (max-width:1024px) {
     .container, .nav1{
         margin: 0 auto;
-        max-width: 740px;
+        max-width: 1024px;
     }
     span, a {
         font-size: 14px;
     }
     .hours{
-        min-width: 230px;
+        max-width: 230px;
     }
     .nav1{
         height: 61px;
@@ -31,7 +32,7 @@
         
     }
     .brousers a{
-        margin-left: 16px; 
+        margin-left: 26px; 
      }
      .mobilelogo{
         display: block;
@@ -43,11 +44,58 @@
     .header_bottom_nav_list_item{
         padding-top: 8px;
 padding-bottom: 9px;
+font-size: 25px;
+    }
+    .mobile{
+        display: none;
+    }
+    .logo2{
+        display: block;
     }
     .header_bottom_nav_list {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 10px;
     }
+}
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 740px;
+    }
+  .nav1{
+    display: none;
+  }  
+  .header_bottom_nav_list_item{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .logo {
+    width: 65px;
+  }
+  
+  #menu:checked + .header_bottom_nav_list_item {
+    display: block;
+    // position: absolute;
+    background-color: yellowgreen;
+width: 60%;
+height: 30vh;
+top: 0;
+left: 0;
+margin-top: 330px;
+
+  }
+//   #menu:checked ~ .header__nav2{
+// margin-top: 68%;
+//   }
+  #menu:checked + .header_bottom_nav_list_item {
+    display: block;
+margin-top: 30px;
+  }
+  #menu:checked ~ .header__nav2 li{
+margin-top: 30px;
+    display: block;
+  }
+
 }

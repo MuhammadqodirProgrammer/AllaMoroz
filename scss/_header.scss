@@ -6,7 +6,10 @@
 //     width: 100%;
     
 // }
-.section1{
+// .section1{
+    
+// }
+.header__container{
     background: #8F0365;
 
 }
@@ -37,6 +40,7 @@ height: 61px;
     
 }
 .header_bottom_nav_list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,6 +65,18 @@ font-size: 75px;
 color: #D40597;
 
 }
-.section2{
- background-color: #FFDCF5;   
+
+.header__container2{
+    background-color: #FFDCF5;   
+
+}
+#menu{
+    appearance: none;
+    position: absolute;
+}
+.mobile{
+    display: none;
+}
+label{
+    display: none;
 }
